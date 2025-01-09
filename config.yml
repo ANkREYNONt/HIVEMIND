@@ -1,0 +1,79 @@
+# config.yml
+
+# General settings
+app:
+  name: RSBI-Entropy-Driven-Learning
+  environment: development
+  debug: true
+  url: http://localhost:8000
+
+# Database settings
+database:
+  connection: mysql
+  host: 127.0.0.1
+  port: 3306
+  name: rsbi_db
+  username: root
+  password: 
+
+# API keys and secrets
+api:
+  key: your_api_key_here
+  secret: your_secret_key_here
+
+# Logging settings
+logging:
+  level: debug
+  file: logs/app.log
+
+# Other settings
+settings:
+  entropy_threshold: 0.5
+  model_save_path: models/
+  data_path: data/
+Explanation of Configuration
+General settings:
+
+app.name: The name of the application.
+
+app.environment: The environment in which the application is running (e.g., development, production).
+
+app.debug: Whether to enable debug mode (true/false).
+
+app.url: The base URL of the application.
+
+Database settings:
+
+database.connection: The type of database connection (e.g., mysql, postgres).
+
+database.host: The database host address.
+
+database.port: The port on which the database is running.
+
+database.name: The name of the database.
+
+database.username: The username for the database connection.
+
+database.password: The password for the database connection.
+
+API keys and secrets:
+
+api.key: An example API key for external services.
+
+api.secret: A secret key for the application.
+
+Logging settings:
+
+logging.level: The level of logging (e.g., debug, info, warning, error).
+
+logging.file: The file path where logs will be saved.
+
+Other settings:
+
+settings.entropy_threshold: The threshold for entropy in the model.
+
+settings.model_save_path: The path where the model will be saved.
+
+settings.data_path: The path where data will be stored.
+
+Contributors can use this config.yml file to configure their local development environment and ensure consistency across different setups.
